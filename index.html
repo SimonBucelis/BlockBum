@@ -1,68 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Block Bum</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/game.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#1a0a1f" />
+  <title>BlockBum</title>
+  <script type="module" crossorigin src="/BlockBum/assets/index-ClDA1kPK.js"></script>
+  <link rel="stylesheet" crossorigin href="/BlockBum/assets/index-Sgaq2UrX.css">
 </head>
 <body>
-    <div class="game-container">
-        <!-- Header -->
-        <header class="game-header">
-            <button class="back-btn">←</button>
-            <div class="level-info">
-                <span class="level-text">LEVEL 1</span>
-                <span class="stars">⭐ 0</span>
-            </div>
-            <div class="score">0</div>
-        </header>
-
-        <!-- Gem Progress -->
-        <div class="gem-progress">
-            <span class="gem-count">💎 <span id="gems-collected">0</span>/50</span>
-            <span class="multiplier">🔥 x1</span>
-        </div>
-
-        <!-- Game Grid -->
-        <div class="grid-container">
-            <div id="game-grid" class="game-grid"></div>
-        </div>
-
-        <!-- Piece Queue -->
-        <div class="queue-container">
-            <div class="queue-label">NEXT:</div>
-            <div id="piece-queue" class="piece-queue"></div>
-        </div>
-
-        <!-- Controls -->
-        <div class="controls">
-            <button id="restart-btn" class="restart-btn">RESTART</button>
-        </div>
-
-        <!-- Win/Loss Overlays -->
-        <div id="win-overlay" class="overlay hidden">
-            <div class="overlay-content">
-                <h2>Level Complete!</h2>
-                <p>Gems Collected: <span id="final-gems">0</span>/50</p>
-                <p>Score: <span id="final-score">0</span></p>
-                <button id="next-level-btn" class="overlay-btn">Next Level</button>
-            </div>
-        </div>
-
-        <div id="loss-overlay" class="overlay hidden">
-            <div class="overlay-content">
-                <h2>Game Over</h2>
-                <p>No more moves available!</p>
-                <button id="try-again-btn" class="overlay-btn">Try Again</button>
-            </div>
-        </div>
-    </div>
-
-    <script src="scripts/levels.js"></script>
-    <script src="scripts/grid.js"></script>
-    <script src="scripts/pieces.js"></script>
-    <script src="scripts/game.js"></script>
+  <div id="root"></div>
 </body>
 </html>
